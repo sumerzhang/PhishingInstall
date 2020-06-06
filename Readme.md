@@ -23,10 +23,10 @@
 
 ## 0x03 VPS上执行初始操作
 ```
-# passwd												# 改密码
+# passwd												                    # 改密码
 # echo "mail.yourdomain.com" > /etc/hostname  			# 修改机器名	
-# echo yourvpsip mail.yourdomain.com >> /etc/hosts     	# 修改解析
-# shutdown -r now   									# 最后,重启系统使之生效
+# echo yourvpsip mail.yourdomain.com >> /etc/hosts  # 修改解析
+# shutdown -r now   									              # 最后,重启系统使之生效
 # 之后,等上大概个半小时左右(其实可能要不了这么久),主要是为了等域名解析记录生效,之后再开始执行该脚本
 
 详细确认您的VPS厂商是否允许所有邮件服务端口正常通信(安全组是否已放开相关邮件服务端口)
